@@ -13,7 +13,7 @@ const path = require("path");
 const S3 = new S3Client({
   credentials: {
     accessKeyId: "AKIARXRIFXXA6ZSP6KXU",
-    secretAccessKey: "txj/l0fXcU2xTQQn4rVJfiaLOGq4vHM4QVosSbAg",
+    secretAccessKey: REDACTED,
   },
   region: "us-east-2",
 });
