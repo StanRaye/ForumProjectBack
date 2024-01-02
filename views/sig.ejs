@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/SIG/</title>
+</head>
+<body>
+    <button type = "button", id = "createThread"> Post a New Thread </button>
+    <div id = "threadCreator" style = "display: none">
+        <form method = "POST" enctype="multipart/form-data">
+            <label for = "authorName">Username (optional):</label>
+            <input type = "text" id="authorName" name="authorName">
+
+            <label for = "title">Title:</label>
+            <input type = "text" id="title" name = "title">
+
+            <label for = "content">Content:</label>
+            <input type = "text" id="content" name = "content">
+
+            <label for = "image">Add an Image: (optional)</label>
+            <input type = "file" id = "image" name = "image" accept = "image/*">
+
+            <input type = "submit" value = "Submit">
+        </form>
+
+        <button type = "button", id = "closePopup">Close</button>
+
+        <script>
+            const openPopupButton = document.getElementById('createThread');
+            const closePopupButton = document.getElementById('closePopup');
+            const popup = document.getElementById('threadCreator');
+        
+            openPopupButton.addEventListener('click', function() {
+                popup.style.display = 'block';
+            });
+        
+            closePopupButton.addEventListener('click', function() {
+                popup.style.display = 'none';
+            });
+
+        </script>
+    </div>
+</body>
+</html>
